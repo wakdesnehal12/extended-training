@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.Container {
+  padding: 100px 50px;
+}
+.Container .CardBox{
+  display: inline-block;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 7px;
+  margin: 0 23px;
+}
+.Container .CardBox .ImgBox img {
+  width: 100%;
+}
+.Container .CardBox .CardInfo{
+  background-color: #eee;
+  padding: 50px 0;
+}
+
+.Container .CardBox .CardInfo h3{
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: system-ui;
+  padding: 12px 0 0px;
+}
+
+.Container .CardBox .CardInfo span{
+  font-size: 16px;
+  font-style: italic;
+  font-family: system-ui;
+}
+.Container .CardBox .CardInfo p{
+  padding: 0 28px;
+}
+.Container .CardBox .CardInfo a{
+  text-decoration: none;
+}
+.Container .CardBox:hover{
+  box-shadow: 0 0 21px #eee;
+  transition: 0.5s;
+}
+.Container .CardBox:hover .CardInfo{
+  background-color: transparent;
+  transition: 0.5s;
+}
